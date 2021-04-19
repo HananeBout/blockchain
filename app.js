@@ -8,8 +8,12 @@ var mongoose = require('mongoose');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+<<<<<<< HEAD
 var catalogRouter = require('./routes/catalog');
 
+=======
+var accountRouter = require('./routes/account');
+>>>>>>> fb44cde941228efb9cb58fb3a04d8dae1949ac6d
 
 var app = express();
 
@@ -27,7 +31,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+<<<<<<< HEAD
 app.use('/catalog', catalogRouter);
+=======
+app.use('/account', accountRouter);
+>>>>>>> fb44cde941228efb9cb58fb3a04d8dae1949ac6d
 
 //connecting DB
 const uri = process.env.db;
@@ -35,8 +43,11 @@ mongoose.connect(uri,{ useNewUrlParser: true, useUnifiedTopology: true },
 () => console.log('connected db')
 );
 
+<<<<<<< HEAD
 app.use(express.json());
 
+=======
+>>>>>>> fb44cde941228efb9cb58fb3a04d8dae1949ac6d
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));

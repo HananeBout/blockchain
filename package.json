@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "catalogue",
+=======
+  "name": "ms-account",
+>>>>>>> fb44cde941228efb9cb58fb3a04d8dae1949ac6d
   "version": "0.0.0",
   "private": true,
   "scripts": {

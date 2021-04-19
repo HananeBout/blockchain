@@ -5,7 +5,11 @@
  */
 
 var app = require('../app');
+<<<<<<< HEAD
 var debug = require('debug')('catalogue:server');
+=======
+var debug = require('debug')('ms-account:server');
+>>>>>>> fb44cde941228efb9cb58fb3a04d8dae1949ac6d
 var http = require('http');
 
 /**
